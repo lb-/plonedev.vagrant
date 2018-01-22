@@ -21,13 +21,15 @@ Installation
 
 3. If you are using Windows, install the Putty ssh kit: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html. Install all the binaries, or at least putty.exe and plink.exe.
 
-4. Download and unpack PloneDev-Vagrant https://github.com/plone/plonedev.vagrant/archive/master.zip.
+4. Go to the releases https://github.com/plone/plonedev.vagrant/releases
 
-5. Open a command prompt; change directory into the plonedev.vagrant-master directory. Run "vagrant up".
+5. Download and unpack the most suitable `zip` file. Stable versions will not have *rc* in the release tag.
 
-6. Go for lunch or a long coffee break. "vagrant up" is going to download a virtual box kit (unless you already happen to have a match installed), download Plone, install Plone, and set up some convenience scripts. On Windows, it will also generate an ssh key pair that's usable with Putty.
+6. Open a command prompt; change directory into the plonedev.vagrant-master directory. Run "vagrant up".
 
-7. Look to see if the install ran well. The last thing you should see in the command window is a success message from the Plone Unified Installer. The virtual machine will be running at this point.
+7. Go for lunch or a long coffee break. "vagrant up" is going to download a virtual box kit (unless you already happen to have a match installed), download Plone, install Plone, and set up some convenience scripts. On Windows, it will also generate an ssh key pair that's usable with Putty.
+
+8. Look to see if the install ran well. The last thing you should see in the command window is a success message from the Plone Unified Installer. The virtual machine will be running at this point.
 
 While running "vagrant up", feel free to ignore messages like "stdin: is not a tty" and "warning: Could not retrieve fact fqdn". They have no significance in this context.
 
@@ -85,6 +87,8 @@ OS X, Linux::
 
 Running Plone and buildout
 --------------------------
+
+Run these commands outside of the VirtualBox "guest" machine.
 
 To run buildout, just issue the command "buildout" (buildout.sh on a Unix-workalike host). This will run buildout; add command line arguments as desired:
 
